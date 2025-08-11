@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/header";
 
 export const metadata: Metadata = {
-  title: "IMDB Clone",
-  description: "IMDB Clone website",
+  title: "IMDb Clone",
+  description: "IMDb Clone website",
 };
 
 export default function RootLayout({
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
