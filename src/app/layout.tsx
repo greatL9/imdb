@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/header";
-import Providers from "./providers";
+import Header from "@/components/header";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "IMDb Clone",
+  title: {
+    template: "%s | IMDb Clone",
+    default: "IMDb Clone",
+  },
   description: "IMDb Clone website",
 };
 
@@ -16,10 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Providers>
-          <Header />
-          {children}
-        </Providers>
+        <ThemeProvider attribute="class" enableSystem={true}>
+          <div className="dark:text-gray-200 text-gray-900 transition-colors duration-300 min-h-screen">
+            <Header />
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

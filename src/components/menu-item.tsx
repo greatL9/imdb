@@ -1,16 +1,18 @@
 import Link from "next/link";
 
-type MenuItemProps = {
+export default function MenuItem({
+  title,
+  address,
+  icon,
+}: {
   title: string;
   address: string;
-  Icon?: React.ElementType;
-};
-
-export default function MenuItem({ title, address, Icon }: MenuItemProps) {
+  icon: React.ReactNode;
+}) {
   return (
     <div>
       <Link href={address} className="mx-4 lg:mx-6 hover:text-amber-600">
-        {Icon && <Icon className="text-2xl sm:hidden mx-4" />}
+        {icon && <span className="text-2xl sm:hidden mx-4">{icon}</span>}
         <p className="hidden sm:inline my-2 text-sm">{title}</p>
       </Link>
     </div>
