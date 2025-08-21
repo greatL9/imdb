@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" enableSystem={true}>
-          <div className="transition-colors duration-300 min-h-screen">
+          <div className="text-gray-700 transition-colors duration-300 min-h-screen select-none">
             <Header />
             {children}
           </div>
