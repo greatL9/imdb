@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" enableSystem={true}>
           <div className="text-gray-700 transition-colors duration-300 min-h-screen select-none">
             <Header />
+            <Navbar />
             {children}
           </div>
         </ThemeProvider>
