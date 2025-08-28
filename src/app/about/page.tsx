@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "About",
 };
 
-export default function About() {
+export default async function About() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 space-y-4 p-4">
       <h1 className="text-2xl font-medium text-amber-600">About Page</h1>
