@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar";
+import Searchbox from "@/components/searchbox";
 
 export const metadata: Metadata = {
   title: {
@@ -24,6 +25,7 @@ export default function RootLayout({
           <div className="text-gray-700 transition-colors duration-300 min-h-screen select-none">
             <Header />
             <Navbar />
+            <Searchbox />
             {children}
           </div>
         </ThemeProvider>

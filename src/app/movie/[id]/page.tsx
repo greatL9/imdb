@@ -13,21 +13,27 @@ export default async function Movie({
 }) {
   const { id } = await params;
   const movie = await getMovie(id);
+  const imagePath = movie.backdrop_path || movie.poster_path;
+
   return (
     <div className="w-full">
       <div className="p-4 md:pt-8 flex flex-col  md:flex-row items-center content-center max-w-6xl mx-auto md:space-x-6">
-        <Image
-          src={`https://image.tmdb.org/t/p/original${
-            movie.backdrop_path || movie.poster_path
-          }`}
-          width={500}
-          height={300}
-          alt="Movie poster"
-          priority
-          className="rounded-t-lg"
-          placeholder="blur"
-          blurDataURL="/spinner.svg"
-        />
+        {imagePath ? (
+          <Image
+            src={`https://image.tmdb.org/t/p/original${imagePath}`}
+            width={500}
+            height={300}
+            alt="Movie poster"
+            priority={true}
+            className="rounded-t-lg w-auto"
+            placeholder="blur"
+            blurDataURL="/spinner.svg"
+          />
+        ) : (
+          <div className="flex items-center justify-center bg-gray-300 w-full h-full rounded-t-lg">
+            No Image
+          </div>
+        )}
         <div className="text-lg mb-3 font-bold p-2">
           <h2>{movie.title || movie.name}</h2>
           <p className="text-lg mb-3">
