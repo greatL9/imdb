@@ -1,6 +1,6 @@
 # IMDb Clone
 
-A modern IMDb clone built with Next.js 13, TypeScript, and Tailwind CSS. Browse trending and top-rated movies, search for your favorites, and view detailed information—all with a clean, responsive UI.
+A modern IMDb clone built with Next.js 15.4.6, TypeScript, and Tailwind CSS. Browse trending and top-rated movies, search for your favorites, and view detailed information all with a clean, responsive UI.
 
 ## Features
 
