@@ -15,7 +15,7 @@ interface Result {
   vote_count?: number;
 }
 
-export default function Card({ result }: { result: Result }) {
+function Card({ result }: { result: Result }) {
   const imagePath = result.backdrop_path || result.poster_path;
   return (
     <div className="cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200 group">
@@ -26,9 +26,7 @@ export default function Card({ result }: { result: Result }) {
               src={`https://image.tmdb.org/t/p/original${imagePath}`}
               alt={result.title || result.name || "image not available"}
               fill
-              sizes="(max-width: 768px) 100vw,
-         (max-width: 1200px) 50vw,
-         33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200 object-cover"
               placeholder="blur"
               blurDataURL="/spinner.svg"
@@ -54,3 +52,5 @@ export default function Card({ result }: { result: Result }) {
     </div>
   );
 }
+
+export { Card };

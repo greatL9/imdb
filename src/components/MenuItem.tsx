@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function MenuItem({
+function MenuItem({
   title,
   address,
   icon,
@@ -18,3 +18,4 @@ export default function MenuItem({
     </div>
   );
 }
+export { MenuItem };

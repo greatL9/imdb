@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import NavbarItem from "./navbar-item";
+import { NavbarItem } from "./NavbarItem";
 
 export default function Navbar() {
   return (

@@ -1,4 +1,4 @@
-import Card from "./card";
+import { Card } from "./Card";
 
 type Result = {
   id: string | number;
@@ -8,7 +8,7 @@ type Result = {
   overview: string;
 };
 
-export default function Results({ results }: { results: Result[] }) {
+function Results({ results }: { results: Result[] }) {
   return (
     <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4">
       {results &&
@@ -16,3 +16,5 @@ export default function Results({ results }: { results: Result[] }) {
     </div>
   );
 }
+
+export { Results };

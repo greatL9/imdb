@@ -3,13 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-export default function NavbarItem({
-  title,
-  param,
-}: {
-  title: string;
-  param: string;
-}) {
+function NavbarItem({ title, param }: { title: string; param: string }) {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
 
@@ -27,3 +21,4 @@ export default function NavbarItem({
     </div>
   );
 }
+export { NavbarItem };

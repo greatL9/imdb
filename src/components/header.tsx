@@ -1,10 +1,10 @@
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
-import MenuItem from "./menu-item";
+import { MenuItem } from "./MenuItem";
 import Link from "next/link";
-import ToggleMode from "./toggle-mode";
+import { ToggleMode } from "./ToggleMode";
 
-export default function Header() {
+function Header() {
   return (
     <div className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6">
       <div className="flex">
@@ -29,3 +29,4 @@ export default function Header() {
     </div>
   );
 }
+export { Header };
