@@ -13,7 +13,7 @@ export default function About() {
         enthusiasts who have come together to create a one-stop destination for
         all your movie-related needs.
       </p>
-
+      http://localhost:3001/movie/617126
       <p>
         Our website is designed to provide you with a comprehensive database of
         movies from all around the world, along with the latest news, reviews,
@@ -23,7 +23,6 @@ export default function About() {
         actor, genre, or release date, making it easy to find the perfect movie
         for any occasion.
       </p>
-
       <p>
         In addition to our extensive movie database, we also offer a platform
         for movie lovers to connect and share their thoughts on the latest movie

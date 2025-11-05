@@ -2,7 +2,7 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
-function Searchbox() {
+export function Searchbox() {
   const [search, setSearch] = useState("");
   const router = useRouter();
   const handleSubmit = (e: FormEvent) => {
@@ -34,5 +34,3 @@ function Searchbox() {
     </form>
   );
 }
-
-export { Searchbox };

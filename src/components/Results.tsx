@@ -8,7 +8,7 @@ type Result = {
   overview: string;
 };
 
-function Results({ results }: { results: Result[] }) {
+export function Results({ results }: { results: Result[] }) {
   return (
     <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4">
       {results &&
@@ -16,5 +16,3 @@ function Results({ results }: { results: Result[] }) {
     </div>
   );
 }
-
-export { Results };

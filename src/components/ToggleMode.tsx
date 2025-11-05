@@ -4,7 +4,7 @@ import { BsFillMoonFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
-function ToggleMode() {
+export function ToggleMode() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const currentTheme = theme === "system" ? systemTheme : theme;
@@ -32,4 +32,3 @@ function ToggleMode() {
     </>
   );
 }
-export { ToggleMode };

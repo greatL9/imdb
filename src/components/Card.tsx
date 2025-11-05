@@ -15,7 +15,7 @@ interface Result {
   vote_count?: number;
 }
 
-function Card({ result }: { result: Result }) {
+export function Card({ result }: { result: Result }) {
   const imagePath = result.backdrop_path || result.poster_path;
   return (
     <div className="cursor-pointer sm:p-3 sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200 group">
@@ -52,5 +52,3 @@ function Card({ result }: { result: Result }) {
     </div>
   );
 }
-
-export { Card };
