@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Searchbox } from "@/components/Searchbox";
 import { Header } from "@/components/Header";
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: {
