@@ -7,10 +7,10 @@ import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | IMDb Clone",
-    default: "IMDb Clone",
+    template: "%s | Moviq",
+    default: "Moviq",
   },
-  description: "IMDb Clone website",
+  description: "Moviq website",
 };
 
 export default function RootLayout({

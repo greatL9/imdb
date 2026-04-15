@@ -1,6 +1,6 @@
-# IMDb Clone
+# Moviq
 
-A modern, responsive IMDb clone built with Next.js, TypeScript, and Tailwind CSS. Discover trending and top-rated movies, search for your favorites, and explore detailed movie information with a sleek, user-friendly interface.
+A modern, responsive movie application built with Next.js, TypeScript, and Tailwind CSS. Discover trending and top-rated movies, search for your favorites, and explore detailed movie information with a sleek, user-friendly interface.
 
 ## ✨ Features
 
@@ -14,7 +14,7 @@ A modern, responsive IMDb clone built with Next.js, TypeScript, and Tailwind CSS
 
 ## 🚀 Why This Project is Useful
 
-This IMDb clone serves as an excellent example of modern web development practices and provides a practical movie discovery platform. Whether you're a developer learning Next.js or a movie enthusiast looking for a clean way to explore films, this project offers:
+This Moviq serves as an excellent example of modern web development practices and provides a practical movie discovery platform. Whether you're a developer learning Next.js or a movie enthusiast looking for a clean way to explore films, this project offers:
 
 - Real-world API integration with TMDb
 - Server-side rendering for optimal performance
@@ -46,8 +46,8 @@ Before you begin, ensure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/greatL9/imdb.git
-cd imdb
+git clone https://github.com/greatL9/moviq.git
+cd moviq
 ```
 
 ### 2. Install Dependencies
@@ -147,8 +147,3 @@ npx tsc --noEmit
 # Clean build
 rm -rf .next && npm run build
 ```
-
-## Credits
-
-- Movie data provided by [TMDb](https://www.themoviedb.org/)
-- Inspired by IMDb
